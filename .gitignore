@@ -1,7 +1,11 @@
+# Node
 node_modules/
-*.sw*
-npm-debug.log
+
+# MacOS
 .DS_STORE
-coverage
-TODO.md
-.nyc_output/
+
+# Coverage
+coverage/
+
+# Dist
+dist/
