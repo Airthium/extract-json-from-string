@@ -1,3 +1,3 @@
-declare const extractJSONFromString: (str: string) => JSON[]
+declare const extractJSONFromString: (str: string) => any[]
 
 export default extractJSONFromString

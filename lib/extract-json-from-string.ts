@@ -82,7 +82,7 @@ const extract = (str: string): string | null => {
   return obj
 }
 
-const extractJSONFromString = (str: string): JSON[] => {
+const extractJSONFromString = (str: string): any[] => {
   let result: string | null
   const objects: JSON[] = []
 
