@@ -27,6 +27,7 @@ jobs:
         run: yarn npm publish --access=public
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YARN_NPM_PUBLISH_REGISTRY: 'https://npm.pkg.github.com'
 
       - uses: actions/setup-node@master
         with:
