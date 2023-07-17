@@ -67,7 +67,6 @@ describe('extract-json-from-string', () => {
       }
     ])
   })
-  //TODO continue
 
   test('invalid object', () => {
     let results = extractJSONFromString('laskfjd laksdj fals { lkasjdf')
