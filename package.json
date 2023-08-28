@@ -1,7 +1,7 @@
 {
   "name": "@airthium/extract-json-from-string",
   "description": "Extract JSON/javascript objects from strings",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "main": "dist/extract-json-from-string.js",
   "type": "module",
   "scripts": {
