@@ -15,7 +15,7 @@ const jsonify = (stringWithJSON: string): JSON => {
   } catch (_err) {
     stringWithJSON = stringWithJSON
       .replace(/([a-zA-Z0-9_$]+\s*):/g, '"$1":')
-      .replace(/'([^']+?)'([\s,\]\}])/g, '"$1"$2')
+      .replace(/'([^']+?)'([\s,\]}])/g, '"$1"$2')
     return JSON.parse(stringWithJSON)
   }
 }
@@ -48,7 +48,7 @@ const any = (
  * @returns
  */
 const extract = (str: string): string | null => {
-  let startIndex = str.search(/[\{\[]/)
+  let startIndex = str.search(/[{[]/)
   if (startIndex === -1) {
     return null
   }
