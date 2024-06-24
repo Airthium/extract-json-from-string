@@ -30,13 +30,13 @@
   },
   "homepage": "https://github.com/Airthium/extract-json-from-string",
   "devDependencies": {
-    "@swc/cli": "0.3.12",
-    "@swc/core": "1.6.1",
+    "@swc/cli": "0.3.14",
+    "@swc/core": "1.6.5",
     "@swc/jest": "0.2.36",
     "@types/jest": "29.5.12",
     "depcheck": "1.4.7",
     "jest": "29.7.0",
     "prettier": "3.3.2"
   },
-  "packageManager": "yarn@4.3.0"
+  "packageManager": "yarn@4.3.1"
 }
