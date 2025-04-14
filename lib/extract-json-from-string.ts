@@ -12,7 +12,8 @@ const blocks = {
 const jsonify = (stringWithJSON: string): JSON => {
   try {
     return JSON.parse(stringWithJSON)
-  } catch (_err) {
+  } catch (err) {
+    console.info('JSON parse failed: cleanup', err)
     stringWithJSON = stringWithJSON
       .replace(/([a-zA-Z0-9_$]+\s*):/g, '"$1":')
       .replace(/'([^']+?)'([\s,\]}])/g, '"$1"$2')
@@ -90,7 +91,9 @@ const extractJSONFromString = (str: string): any[] => {
     try {
       let obj = jsonify(result)
       objects.push(obj)
-    } catch (_err) {}
+    } catch (err) {
+      console.error(err)
+    }
 
     str = str.replace(result, '')
   }
