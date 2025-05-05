@@ -1,13 +1,13 @@
 {
   "name": "@airthium/extract-json-from-string",
   "description": "Extract JSON/javascript objects from strings",
-  "version": "1.0.87",
+  "version": "1.0.88",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "depcheck": "depcheck . --ignores=@swc/jest,@types/jest",
     "prettier": "prettier -l '**/*.{js,ts,json,md}'",
-    "test": "jest --coverage",
+    "test": "jest --coverage --silent",
     "build": "swc lib -o dist/index.js"
   },
   "repository": {
